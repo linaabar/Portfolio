@@ -1,0 +1,397 @@
+
+:root {
+  --vert: #5A7322;
+  --vert-fonce: #3F521A;
+  --fond: #ECECE6;
+  --blanc: #FFFFFF;
+  --texte: #1F2318;
+  --texte-doux: #4A5240;
+  --bordure: #8A8F80;
+  --placeholder: #D6D8CC;
+
+  --police: "Times New Roman", Times, serif;
+  --largeur-max: 1200px;
+  --rayon: 4px;
+}
+
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--police);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: var(--vert-fonce);
+}
+
+a:hover {
+  color: var(--texte);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--vert);
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.logo {
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  color: var(--texte);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 28px;
+  border-radius: var(--rayon);
+  font-family: inherit;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--plein {
+  background: var(--vert);
+  color: var(--blanc);
+  border: none;
+}
+
+.btn--plein:hover {
+  background: var(--vert-fonce);
+  color: var(--blanc);
+}
+
+.btn--contour {
+  border: 1.5px solid var(--texte);
+  color: var(--texte);
+}
+
+.hero {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.hero__intro {
+  color: var(--vert);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.hero__title {
+  font-size: 76px;
+  line-height: 1.05;
+  max-width: 900px;
+  text-wrap: balance;
+}
+
+.hero__text {
+  max-width: 620px;
+  margin: 32px 0 40px;
+  font-size: 20px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.section--blanc {
+  background: var(--blanc);
+}
+
+.section__titre {
+  font-size: 44px;
+  margin-bottom: 40px;
+}
+
+.sous-titre {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--texte-doux);
+  margin-bottom: 24px;
+}
+
+.grille {
+  display: grid;
+  gap: 32px;
+}
+
+.grille--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grille--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.deux-colonnes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* ===== SERVICES ===== */
+.service {
+  border-top: 2px solid var(--vert);
+  padding-top: 20px;
+}
+
+.service h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tarif {
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+
+.projets-clients {
+  margin-bottom: 56px;
+}
+
+.projet h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.projet__visuel {
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  margin: 0 0 16px;
+  border: 1px solid rgba(31, 35, 24, 0.12);
+  border-radius: 8px;
+  background: var(--placeholder);
+  box-shadow: 0 8px 24px rgba(31, 35, 24, 0.12);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+
+.projet__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 450ms ease;
+}
+
+.projet__visuel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(31, 35, 24, 0.18);
+}
+
+.projet__visuel:hover .projet__image {
+  transform: scale(1.04);
+}
+
+.projet__meta {
+  font-size: 15px;
+  color: var(--texte-doux);
+  margin-bottom: 8px;
+}
+
+.projet__tags {
+  font-size: 15px;
+  color: var(--vert);
+}
+
+.carte {
+  background: var(--blanc);
+  padding: 24px;
+  border-radius: var(--rayon);
+}
+
+.carte h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.carte .projet__tags {
+  margin-bottom: 8px;
+}
+
+/* ===== À PROPOS ===== */
+.competences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 8px 0 0;
+}
+
+.competences dt {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--texte-doux);
+  margin-bottom: 4px;
+}
+
+.competences dd {
+  margin: 0;
+}
+
+/* ===== CONTACT ===== */
+.coordonnees {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--blanc);
+  padding: 32px;
+  border-radius: var(--rayon);
+}
+
+.formulaire label {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.formulaire input,
+.formulaire textarea {
+  font-family: inherit;
+  font-size: 17px;
+  padding: 12px 14px;
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  background: var(--blanc);
+  margin-bottom: 14px;
+}
+
+.formulaire textarea {
+  resize: vertical;
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.footer {
+  border-top: 1px solid #C4C7B8;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--texte-doux);
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .grille--2,
+  .grille--3,
+  .deux-colonnes {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 72px;
+  }
+
+  .hero__title {
+    font-size: 46px;
+  }
+
+  .section__titre {
+    font-size: 36px;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projet__visuel,
+  .projet__image {
+    transition: none;
+  }
+
+  .projet__visuel:hover,
+  .projet__visuel:hover .projet__image {
+    transform: none;
+  }
+}
