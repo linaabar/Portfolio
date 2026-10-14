@@ -3,187 +3,341 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lina Abarou, développeuse web freelance à La Rochelle</title>
-  <meta name="description" content="Création de sites vitrines sur mesure, WordPress et PrestaShop à La Rochelle. De la maquette à la mise en ligne.">
+  <title>Lina Abarou, Développeuse Web Full-Stack à La Rochelle</title>
+  <meta name="description" content="Lina Abarou, développeuse web full-stack freelance à La Rochelle. Sites vitrines sur mesure, WordPress, PrestaShop, identité visuelle et mise en ligne.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
   <!-- ===== EN-TÊTE ===== -->
-  <header class="header container">
-    <a href="#top" class="logo">LINA ABAROU</a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="#services">Services</a>
-      <a href="#projets">Projets</a>
-      <a href="#apropos">À propos</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#accueil">Lina Abarou</a>
+
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <main>
+  <main id="contenu">
 
     <!-- ===== ACCUEIL ===== -->
-    <section id="top" class="hero container">
-      <p class="hero__intro">Développeuse web freelance · La Rochelle</p>
-      <h1 class="hero__title">Des sites vitrines clairs et sécurisés, de la maquette à la mise en ligne.</h1>
-      <p class="hero__text">Je conçois et je développe des sites pour les indépendants, les associations et les petites entreprises. Vous avez un seul interlocuteur du premier croquis jusqu'à l'hébergement.</p>
-      <div class="hero__actions">
-        <a href="#projets" class="btn btn--plein">Voir mes projets</a>
-        <a href="#contact" class="btn btn--contour">Me contacter</a>
-      </div>
-    </section>
-
-    <!-- ===== SERVICES ===== -->
-    <section id="services" class="section section--blanc">
-      <div class="container">
-        <h2 class="section__titre">Ce que je propose</h2>
-        <div class="grille grille--2">
-          <div class="service">
-            <h3>Site vitrine sur mesure</h3>
-            <p>Maquette, charte graphique et développement en HTML, CSS, JavaScript et PHP. Un site rapide, responsive et qui vous ressemble.</p>
-          </div>
-          <div class="service">
-            <h3>WordPress et PrestaShop</h3>
-            <p>Installation, thème, configuration et prise en main pour que vous puissiez modifier vos contenus vous-même.</p>
-          </div>
-          <div class="service">
-            <h3>Formulaires sécurisés</h3>
-            <p>Contact, demande de devis, inscription. Protection contre les injections et le spam (honeypot).</p>
-          </div>
-          <div class="service">
-            <h3>Mise en ligne et suivi</h3>
-            <p>Nom de domaine, hébergement (OVH ou autre), déploiement et petites mises à jour après livraison.</p>
-          </div>
+    <section class="hero" id="accueil">
+      <div class="hero-text">
+        <h1 class="hero-name"><span>Lina</span> <span>Abarou</span></h1>
+        <p class="hero-title">Développeuse Web Full-Stack</p>
+        <p class="hero-pitch">Je crée des sites vitrines sur mesure pour les entreprises, artisans et associations : de la maquette à la mise en ligne, avec un vrai soin porté à la sécurité.</p>
+        <p class="hero-place">Freelance, basée à La Rochelle</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#projets">Voir mes projets</a>
+          <a class="btn btn-line" href="#contact">Me contacter</a>
         </div>
-        <p class="tarif">À partir de [VOTRE TARIF] € pour un site vitrine. Devis gratuit.</p>
-      </div>
-    </section>
-
-    <!-- ===== PROJETS ===== -->
-    <section id="projets" class="section container">
-      <h2 class="section__titre">Projets</h2>
-
-      <!-- Projets clients -->
-      <div class="grille grille--2 projets-clients">
-        <article class="projet">
-          <figure class="projet__visuel">
-            <img src="images/figestion.jpg" alt="Page d'accueil du site F&amp;I Gestion" class="projet__image" loading="lazy" decoding="async">
-          </figure>
-          <p class="projet__meta">2026 · Client · Cabinet de syndic</p>
-          <h3>F&I Gestion</h3>
-          <p>Identité numérique complète : logo, charte graphique, maquettes, puis un site vitrine responsive avec formulaires PHP sécurisés, déployé sur un serveur OVH.</p>
-          <p class="projet__tags">HTML · CSS · JS · PHP · Figma</p>
-        </article>
-        <article class="projet">
-          <figure class="projet__visuel">
-            <img src="images/lagord-tennis.jpg" alt="Page d'accueil du site Lagord Tennis Squash" class="projet__image" loading="lazy" decoding="async">
-          </figure>
-          <p class="projet__meta">2025/2026 · Client · Club sportif</p>
-          <h3>Lagord Tennis Squash</h3>
-          <p>Création du site du club sous PrestaShop : intégration du thème, configuration du CMS, mise en ligne, gestion du contenu et de l'hébergement.</p>
-          <p class="projet__tags">PrestaShop · CMS · Hébergement</p>
-        </article>
       </div>
 
-      <!-- Projets perso -->
-      <h3 class="sous-titre">Projets personnels et techniques</h3>
-      <div class="grille grille--3">
-        <article class="carte">
-          <p class="projet__tags">En cours</p>
-          <h4>MovieTone</h4>
-          <p>Une application qui extrait la palette de couleurs dominantes d'un film. Le cinéma et le code au même endroit.</p>
-          <a href="[LIEN GITHUB]">Voir sur GitHub</a>
-        </article>
-        <article class="carte">
-          <p class="projet__tags">Python · Streamlit</p>
-          <h4>Images astronomiques</h4>
-          <p>Traitement et visualisation de fichiers FITS avec zoom dynamique et analyse des données (NumPy, Pandas).</p>
-          <a href="[LIEN GITHUB]">Voir sur GitHub</a>
-        </article>
-        <article class="carte">
-          <p class="projet__tags">C · Linux · Cybersécurité</p>
-          <h4>Virus compagnon</h4>
-          <p>Prototype pédagogique pour comprendre les mécanismes d'infection et de furtivité, et donc mieux s'en protéger.</p>
-          <a href="[LIEN GITHUB]">Voir sur GitHub</a>
-        </article>
+      <div class="hero-portrait">
+        <div class="photo">
+          <!-- Mets ta photo dans assets/photo.jpg -->
+          <img src="assets/photo.jpg" alt="Portrait de Lina Abarou" width="320" height="320"
+               onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+          <span class="photo-fallback" aria-hidden="true">LA</span>
+        </div>
       </div>
     </section>
 
     <!-- ===== À PROPOS ===== -->
-    <section id="apropos" class="section section--blanc">
-      <div class="container deux-colonnes">
-        <div>
-          <h2 class="section__titre">À propos</h2>
-          <p>Diplômée d'une Licence Informatique à La Rochelle Université, je suis actuellement en Mastère Expert IT, cybersécurité et haute disponibilité. J'aime comprendre comment les choses fonctionnent en profondeur, ce qui me pousse à faire des sites fiables et bien sécurisés, pas juste jolis.</p>
-          <p>En dehors du code, je suis passionnée de cinéma et de jeux vidéo. Analyser un film ou une mécanique de jeu, c'est la même démarche que débugger : chercher pourquoi ça marche.</p>
+    <section class="section" id="a-propos">
+      <h2 class="section-title">Mon profil</h2>
+
+      <div class="about">
+        <div class="about-text">
+          <p class="lead">Je m'appelle Lina, développeuse web à La Rochelle. Je conçois des sites clairs, rapides et bien protégés, pensés pour les gens qui vont s'en servir.</p>
+          <p>Diplômée d'une Licence Informatique à La Rochelle Université, je poursuis aujourd'hui un Mastère Expert IT, cybersécurité et haute disponibilité chez Icadémie. En parallèle, je lance mon activité en freelance.</p>
+          <p>Ma formation en cybersécurité change ma façon de coder. Un formulaire de contact, chez moi, est protégé contre les injections et le spam. Un site mis en ligne est correctement configuré. Et je préfère comprendre une technologie en profondeur plutôt que de la survoler.</p>
         </div>
-        <dl class="competences">
-          <div>
-            <dt>Web</dt>
-            <dd>HTML, CSS, JavaScript, PHP, WordPress, PrestaShop</dd>
+
+        <div class="offer">
+          <h3>Ce que je peux faire pour vous</h3>
+          <dl>
+            <div>
+              <dt>Site vitrine sur mesure</dt>
+              <dd>Un site responsive codé à la main, adapté à votre activité.</dd>
+            </div>
+            <div>
+              <dt>Site avec WordPress ou PrestaShop</dt>
+              <dd>Pour gérer vous-même vos contenus ou votre boutique.</dd>
+            </div>
+            <div>
+              <dt>Identité visuelle</dt>
+              <dd>Logo, charte graphique et maquettes avant le développement.</dd>
+            </div>
+            <div>
+              <dt>Mise en ligne et hébergement</dt>
+              <dd>Nom de domaine, serveur, déploiement : je m'occupe de tout.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section class="section" id="competences">
+      <h2 class="section-title">Compétences</h2>
+
+      <div class="skills">
+        <div class="skill-row">
+          <h3>Front-end</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Back-end et bases de données</h3>
+          <ul class="chips"><li>PHP</li><li>MySQL</li><li>SQL</li><li>phpMyAdmin</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>CMS</h3>
+          <ul class="chips"><li>WordPress</li><li>PrestaShop</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Design</h3>
+          <ul class="chips"><li>UI/UX</li><li>Figma</li><li>Canva</li><li>Logo et charte graphique</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Mise en ligne</h3>
+          <ul class="chips"><li>Git</li><li>GitHub</li><li>FileZilla</li><li>Hébergement OVH</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Sécurité et systèmes</h3>
+          <ul class="chips"><li>Formulaires sécurisés</li><li>Linux</li><li>TCP/UDP</li><li>Sockets et pipes</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Autres langages</h3>
+          <ul class="chips"><li>Python</li><li>NumPy</li><li>Pandas</li><li>Streamlit</li><li>Java</li><li>Maven</li><li>C</li><li>POO</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Langues</h3>
+          <ul class="chips"><li>Français, langue maternelle</li><li>Anglais C1</li><li>Espagnol B1</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPÉRIENCES ===== -->
+    <section class="section" id="experiences">
+      <h2 class="section-title">Expériences</h2>
+
+      <ol class="jobs">
+        <li class="job">
+          <div class="job-side">
+            <span class="job-date">2026</span>
+            <span class="job-type">Stage</span>
           </div>
-          <div>
-            <dt>Données</dt>
-            <dd>MySQL, SQL, Python, NumPy, Pandas</dd>
+          <div class="job-main">
+            <h3>Développeuse web, F&amp;I Gestion</h3>
+            <p class="job-intro">Création de A à Z de l'identité numérique d'un cabinet de syndic.</p>
+            <ul class="job-tasks">
+              <li>Conception UI/UX : logo, charte graphique et maquettes</li>
+              <li>Développement sur mesure d'un site vitrine responsive</li>
+              <li>Formulaires PHP sécurisés (anti-injection, honeypot)</li>
+              <li>Déploiement sur serveur OVH via FileZilla</li>
+            </ul>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>OVH</li></ul>
+            <a class="text-link" href="https://figestion.fr/" target="_blank" rel="noopener">Voir le site figestion.fr</a>
           </div>
-          <div>
-            <dt>Outils</dt>
-            <dd>Git, GitHub, VS Code, Figma, FileZilla, phpMyAdmin</dd>
+        </li>
+
+        <li class="job">
+          <div class="job-side">
+            <span class="job-date">2025/2026</span>
+            <span class="job-type">Réalisation de site</span>
           </div>
-          <div>
-            <dt>Langues</dt>
-            <dd>Français, anglais (C1), espagnol (B1)</dd>
+          <div class="job-main">
+            <h3>Site web, Lagord Tennis Squash</h3>
+            <p class="job-intro">Création complète du site vitrine du club.</p>
+            <ul class="job-tasks">
+              <li>Intégration du thème et configuration de PrestaShop</li>
+              <li>Mise en ligne du site</li>
+              <li>Gestion du contenu et de l'hébergement</li>
+            </ul>
+            <ul class="tags"><li>PrestaShop</li><li>CMS</li><li>Hébergement</li></ul>
+            <a class="text-link" href="https://lagordtennissquash.com/" target="_blank" rel="noopener">Voir le site lagordtennissquash.com</a>
           </div>
-        </dl>
+        </li>
+
+        <li class="job">
+          <div class="job-side">
+            <span class="job-date">2019/2020</span>
+            <span class="job-type">Stage d'observation</span>
+          </div>
+          <div class="job-main">
+            <h3>Un Toit Pour Les Abeilles</h3>
+            <ul class="job-tasks">
+              <li>Création de visuels sur Canva</li>
+              <li>Initiation au HTML</li>
+              <li>Découverte du milieu professionnel</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section class="section" id="projets">
+      <h2 class="section-title">Projets</h2>
+
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button type="button" class="filter" data-filter="all" aria-pressed="true">Tous</button>
+        <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" class="filter" data-filter="cyber" aria-pressed="false">Cyber</button>
+        <button type="button" class="filter" data-filter="data" aria-pressed="false">Data</button>
+      </div>
+
+      <ul class="projects" aria-live="polite">
+
+        <li class="project project-featured" data-cat="web data">
+          <figure class="project-media">
+            <!-- Mets ta capture dans assets/movietone.png -->
+            <img src="assets/movietone.png" alt="Capture d'écran de l'application MovieTone" loading="lazy"
+                 onerror="this.parentElement.classList.add('is-empty'); this.remove();">
+            <figcaption>Capture à venir</figcaption>
+          </figure>
+          <div class="project-body">
+            <p class="project-meta">2026, en cours</p>
+            <h3>MovieTone</h3>
+            <p>Une application qui extrait la palette de couleurs dominantes d'un film. Mon projet personnel du moment, à la croisée du cinéma et du code, construit étape par étape et publié au fil de l'eau sur GitHub.</p>
+            <ul class="tags"><li>Projet perso</li><li>Couleurs</li><li>En cours</li></ul>
+            <!-- Remplace VOTRE-PSEUDO par ton pseudo GitHub -->
+            <a class="text-link" href="https://github.com/VOTRE-PSEUDO/MovieTone" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+          </div>
+        </li>
+
+        <li class="project" data-cat="cyber">
+          <p class="project-meta">2026, projet universitaire</p>
+          <h3>Virus compagnon</h3>
+          <p>Prototype pédagogique en C sous Linux pour étudier les mécanismes d'infection, la propagation par usurpation d'exécutables et la furtivité logicielle.</p>
+          <ul class="tags"><li>C</li><li>Linux</li><li>Sécurité</li></ul>
+          <p class="project-note">Code non public, projet à visée pédagogique.</p>
+        </li>
+
+        <li class="project" data-cat="data">
+          <p class="project-meta">2024/2025, projet universitaire</p>
+          <h3>Visualisation d'images astronomiques</h3>
+          <p>Application Python pour traiter et visualiser des images FITS, avec interface interactive, zoom dynamique et analyse des données.</p>
+          <ul class="tags"><li>Python</li><li>Streamlit</li><li>NumPy</li><li>Pandas</li></ul>
+        </li>
+
+        <li class="project" data-cat="web">
+          <p class="project-meta">2023/2024, projet universitaire</p>
+          <h3>Site interactif en CSS 2D et 3D</h3>
+          <p>Un site animé uniquement en CSS, avec des transformations 2D et 3D pour rendre l'interface plus vivante.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>Animations</li></ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== FORMATION ===== -->
+    <section class="section" id="formation">
+      <h2 class="section-title">Formation et certifications</h2>
+
+      <div class="education">
+        <ol class="timeline">
+          <li>
+            <span class="when">2026/2028</span>
+            <div class="what">
+              <h3>Mastère Expert IT, cybersécurité et haute disponibilité</h3>
+              <p>Icadémie</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">2023/2026</span>
+            <div class="what">
+              <h3>Licence Informatique</h3>
+              <p>La Rochelle Université</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">2022/2023</span>
+            <div class="what">
+              <h3>Baccalauréat Général</h3>
+              <p>Spécialités Mathématiques, Physique-Chimie et NSI, option Maths expertes. Lycée René Josué Valin, La Rochelle.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="certifs">
+          <h3 class="sub-title">Certifications</h3>
+          <ul>
+            <li>
+              <h4>Les fondements de l'intelligence artificielle</h4>
+              <p>LinkedIn Learning, octobre 2026</p>
+              <a class="text-link" href="assets/certificat-fondements-ia.pdf" target="_blank" rel="noopener">Voir le certificat</a>
+            </li>
+            <li>
+              <h4>Certification PIX</h4>
+              <p>Compétences numériques</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section container">
-      <div class="deux-colonnes">
-        <div>
-          <h2 class="section__titre">Un projet de site ?</h2>
-          <p>Parlez-moi de votre activité, je vous réponds sous 48 h avec une première proposition.</p>
-          <ul class="coordonnees">
-            <li><a href="mailto:lina.abarou@icloud.com">lina.abarou@icloud.com</a></li>
-            <li><a href="tel:+33771853559">07 71 85 35 59</a></li>
-            <li>La Rochelle et alentours, ou à distance</li>
-          </ul>
+    <section class="section contact" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <p class="contact-lead">Un projet de site&nbsp;? Parlons&#8209;en.</p>
+          <p>Je réponds à chaque message, en général sous 48 heures. Dites-moi en quelques lignes ce que fait votre activité et ce que vous attendez de votre site.</p>
         </div>
 
-        <!-- Le traitement se fera dans contact.php -->
-        <form class="formulaire" action="contact.php" method="post">
-          <label for="nom">Nom</label>
-          <input id="nom" name="nom" type="text" required>
-
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" required>
-
-          <label for="message">Votre projet</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <!-- Honeypot anti-spam : caché aux humains, rempli par les robots -->
-          <div class="honeypot" aria-hidden="true">
-            <label for="site">Ne pas remplir</label>
-            <input id="site" name="site" type="text" tabindex="-1" autocomplete="off">
-          </div>
-
-          <button type="submit" class="btn btn--plein">Envoyer</button>
-        </form>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">E-mail</span>
+            <a href="mailto:lina.abarou@icloud.com">lina.abarou@icloud.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Téléphone</span>
+            <a href="tel:+33771853559">+33 7 71 85 35 59</a>
+          </li>
+          <li>
+            <span class="contact-label">Ville</span>
+            <span>La Rochelle, France</span>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <!-- Remplace par l'URL de ton profil GitHub -->
+            <a href="https://github.com/VOTRE-PSEUDO" target="_blank" rel="noopener">github.com/VOTRE-PSEUDO</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <!-- Remplace par l'URL de ton profil LinkedIn -->
+            <a href="https://www.linkedin.com/in/VOTRE-PROFIL" target="_blank" rel="noopener">linkedin.com/in/VOTRE-PROFIL</a>
+          </li>
+        </ul>
       </div>
     </section>
-
   </main>
 
-  <!-- ===== PIED DE PAGE ===== -->
-  <footer class="footer container">
-    <p>© 2026 Lina Abarou · SIRET [VOTRE SIRET]</p>
-    <p>
-      <a href="[LIEN GITHUB]">GitHub</a> ·
-      <a href="[LIEN LINKEDIN]">LinkedIn</a> ·
-      <a href="mentions-legales.html">Mentions légales</a>
-    </p>
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Lina Abarou, développeuse web à La Rochelle</p>
+    <a href="#accueil">Retour en haut</a>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
